@@ -126,6 +126,7 @@
 <board>
 <plain>
 <circle x="25.4" y="34.29" radius="22.86" width="0.254" layer="20"/>
+<rectangle x1="12.8" y1="32.8" x2="36.8" y2="34.4" layer="20"/>
 </plain>
 <libraries>
 <library name="USB3.0">

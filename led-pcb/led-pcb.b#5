@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.4" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -126,7 +126,7 @@
 <board>
 <plain>
 <circle x="25.4" y="34.29" radius="22.86" width="0.254" layer="20"/>
-<rectangle x1="12.8" y1="32.8" x2="36.8" y2="34.4" layer="20"/>
+<rectangle x1="13.2" y1="32.8" x2="37.2" y2="34.4" layer="20"/>
 </plain>
 <libraries>
 <library name="USB3.0">
