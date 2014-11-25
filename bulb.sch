@@ -1594,9 +1594,9 @@ http://www.rfdigital.com/wp-content/uploads/2014/03/rfduino.datasheet.pdf</descr
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="USB" device="-A-H"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M05" device="PTH"/>
-<part name="CPY1" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="RF_Digital_RFD22102_Eagle_Schematic_PCB_Library" deviceset="RFD22102" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="CPY1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1617,9 +1617,9 @@ http://www.rfdigital.com/wp-content/uploads/2014/03/rfduino.datasheet.pdf</descr
 <instance part="GND18" gate="1" x="76.2" y="119.38"/>
 <instance part="JP1" gate="G$1" x="35.56" y="86.36" rot="R180"/>
 <instance part="JP2" gate="G$1" x="119.38" y="152.4"/>
-<instance part="CPY1" gate="1" x="132.08" y="144.78"/>
 <instance part="U1" gate="G$1" x="231.14" y="71.12"/>
 <instance part="GND1" gate="1" x="193.04" y="73.66"/>
+<instance part="CPY1" gate="1" x="157.48" y="154.94" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1661,15 +1661,15 @@ http://www.rfdigital.com/wp-content/uploads/2014/03/rfduino.datasheet.pdf</descr
 <wire x1="248.92" y1="111.76" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="127" y1="147.32" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="CPY1" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="215.9" y1="78.74" x2="193.04" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="193.04" y1="78.74" x2="193.04" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="4"/>
+<wire x1="127" y1="154.94" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="CPY1" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -1731,21 +1731,24 @@ http://www.rfdigital.com/wp-content/uploads/2014/03/rfduino.datasheet.pdf</descr
 <label x="132.08" y="157.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="R" class="0">
+<net name="DIN" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="4"/>
-<label x="142.24" y="154.94" size="1.778" layer="95" xref="yes"/>
-<wire x1="127" y1="154.94" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GPIO5"/>
+<wire x1="246.38" y1="71.12" x2="251.46" y2="71.12" width="0.1524" layer="91"/>
+<label x="246.38" y="71.12" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="G" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="3"/>
 <label x="142.24" y="152.4" size="1.778" layer="95" xref="yes"/>
 <wire x1="127" y1="152.4" x2="142.24" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="B" class="0">
+<net name="DOUT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO6"/>
+<wire x1="246.38" y1="73.66" x2="251.46" y2="73.66" width="0.1524" layer="91"/>
+<label x="246.38" y="73.66" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
 <label x="142.24" y="149.86" size="1.778" layer="95" xref="yes"/>
