@@ -126,13 +126,13 @@
 <board>
 <plain>
 <circle x="25.4" y="34.29" radius="23.368" width="0.1" layer="20"/>
-<wire x1="12.75" y1="32.75" x2="12.75" y2="35.5" width="0" layer="20"/>
-<wire x1="12.75" y1="35.5" x2="38.25" y2="35.5" width="0" layer="20"/>
-<wire x1="38.25" y1="35.5" x2="38.25" y2="32.75" width="0" layer="20"/>
-<wire x1="38.25" y1="32.75" x2="12.75" y2="32.75" width="0" layer="20"/>
-<dimension x1="12.75" y1="32.75" x2="12.75" y2="35.5" x3="54.25" y3="34.125" textsize="1.778" layer="25"/>
-<dimension x1="12.75" y1="32.75" x2="38.25" y2="32.75" x3="25.5" y3="66.25" textsize="1.778" layer="25"/>
+<wire x1="17.25" y1="32.75" x2="17.25" y2="35.5" width="0" layer="20"/>
+<wire x1="17.25" y1="35.5" x2="33.5" y2="35.5" width="0" layer="20"/>
+<wire x1="33.5" y1="35.5" x2="33.5" y2="32.75" width="0" layer="20"/>
+<wire x1="33.5" y1="32.75" x2="17.25" y2="32.75" width="0" layer="20"/>
 <dimension x1="25.42976875" y1="10.92201875" x2="25.37023125" y2="57.65798125" x3="-6" y3="34.25" textsize="1.778" layer="25" dtype="diameter"/>
+<dimension x1="17.25" y1="35.5" x2="33.5" y2="35.5" x3="25.375" y3="60" textsize="1.778" layer="25"/>
+<dimension x1="33.5" y1="35.5" x2="33.5" y2="32.75" x3="53.25" y3="34.125" textsize="1.778" layer="25"/>
 </plain>
 <libraries>
 <library name="USB3.0">
